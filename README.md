@@ -16,17 +16,6 @@ Como el Ejercicio 4/5 del Lab09 pide comparar Precision@5 entre los tres sistema
 
 ---
 
-## Resultados obtenidos
-
-| Criterio | ChromaDB (Lab06) | pgvector (Lab08) | MongoDB Atlas (Lab09) |
-|---|---|---|---|
-| Precision@5 | 0.5600 | 0.5600 | 0.5600 |
-| Latencia media (ms) | 10.32 | 10.48 | 123.50 |
-
-Los tres sistemas empatan en Precision@5 (mismo modelo de embeddings, mismo corpus, mismo eval_set — a solo 40 documentos, la búsqueda aproximada converge con la exacta). Atlas es ~12 veces más lento por el round-trip de red hacia el clúster cloud.
-
----
-
 ## Cómo ejecutar cada notebook
 
 - **Lab06:** Con Jupyter/VS Code, no necesita ningún servicio externo.
