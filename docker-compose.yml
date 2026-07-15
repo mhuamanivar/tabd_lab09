@@ -1,0 +1,16 @@
+services:
+  pgvector-lab:
+    image: pgvector/pgvector:pg16
+    container_name: pgvector-lab
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bdv
+      POSTGRES_PASSWORD: bdv2026
+      POSTGRES_DB: bdvdb
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+
+volumes:
+  pgvector_data:

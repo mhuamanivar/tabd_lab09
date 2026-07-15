@@ -1,0 +1,20 @@
+numpy<2
+pandas
+matplotlib
+
+# Lab06 - ChromaDB + LangChain
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+pydantic-settings
+
+# Lab08 - pgvector + PostgreSQL
+psycopg2-binary
+pgvector
+
+# Lab09 - MongoDB Atlas
+pymongo[srv]
+
+# Para ejecutar los notebooks localmente
+jupyter
+ipykernel
