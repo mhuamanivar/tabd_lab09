@@ -10,8 +10,6 @@ Como el Lab09 pide comparar Precision@5 contra ChromaDB y pgvector usando el mis
 
 ---
 
-## Decisión de diseño: corpus y eval_set compartidos
-
 Cada guía original pide un corpus distinto (Lab06: 50+ docs en 3 categorías; Lab08: 30+ docs en las mismas 3; Lab09: 40 docs en 4 categorías, con su propio `eval_set` de 10 queries).
 
 Como el Ejercicio 4/5 del Lab09 pide comparar Precision@5 entre los tres sistemas "con el mismo eval_set", los notebooks de Lab06 y Lab08 usan el **corpus de 40 documentos del Lab09** (10 por categoría × 4 categorías) y su mismo `eval_set`, en vez de la especificación más chica de sus propias guías. Solo así la comparación es válida.
